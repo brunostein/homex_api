@@ -95,7 +95,7 @@ initMongoDBConnection(config.mongodb.uri, config.mongodb.options, function() {
       server = https.createServer(credentials, app);
     }
 
-    app.listen(config.api.port, config.api.host, () => {
+    app.listen(config.api.port, () => {
       console.log(`Started up at http://${config.api.host}:${config.api.port}`);
     });
   });
